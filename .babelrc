@@ -1,4 +1,32 @@
 {
-  "presets": ["es2015", "stage-0", "react"],
-  "plugins": ["remove-comments", "transform-node-env-inline", "transform-decorators-legacy"]
+  "env": {
+    "development": {
+      "presets": [
+        ["env", { "debug": true, "modules": false }],
+        "stage-0",
+        "react"
+      ],
+      "plugins": ["transform-node-env-inline"]
+    },
+    "production": {
+      "presets": [
+        [
+          "env",
+          {
+            "browsers": ["last 2 versions", "ie >= 11"],
+            "modules": false,
+            "useBuiltIns": true
+          }
+        ],
+        "stage-0",
+        "react"
+      ],
+      "plugins": [
+        "transform-node-env-inline",
+        ["transform-react-remove-prop-types", { "removeImport": true }],
+        "transform-react-pure-components",
+        "transform-function-to-arrow"
+      ]
+    }
+  }
 }

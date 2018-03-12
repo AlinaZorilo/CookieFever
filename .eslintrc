@@ -1,11 +1,7 @@
 {
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
-  },
   "env": {
     "browser": true,
-    "node": true
+    "es6": true
   },
   "parser": "babel-eslint",
   "rules": {
@@ -13,9 +9,30 @@
     "strict": [2, "never"],
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "react/react-in-jsx-scope": 2
+    "react/react-in-jsx-scope": 2,
+    "no-console": 1,
+    "react/prop-types": 0,
+    "react/no-string-refs": 1,
+    "react/display-name": 0,
+    "compat/compat": "error",
+    "import/no-unresolved": 0,
+    "promise/catch-or-return": 0
   },
+  "settings": {
+    "import/external-module-folders": ["node_modules", "src"]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:promise/recommended",
+    "plugin:import/errors"
+  ],
   "plugins": [
-    "react"
+    "prettier",
+    "react",
+    "promise",
+    "compat",
+    "import"
   ]
 }
