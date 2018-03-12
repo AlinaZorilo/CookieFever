@@ -1,0 +1,4 @@
+{
+  "presets": ["es2015", "stage-0", "react"],
+  "plugins": ["remove-comments", "transform-node-env-inline", "transform-decorators-legacy"]
+}

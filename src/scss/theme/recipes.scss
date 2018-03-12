@@ -1,0 +1,51 @@
+header {
+	background: #841550;
+	color: #fff;
+}
+
+.Recipes {
+	border: 1px solid #f3f3f3;
+	.Dish {
+		i.fa.fa-heart-o {
+			color: pink;
+		}
+		.bot {
+			img.avatar {
+				border: 1px solid #fff;
+			}
+			.info {
+				i.fa {
+					color: pink;
+				}
+				span {
+					color: grey;
+				}
+			}
+		}
+	}
+}
+
+a {
+	color: black;
+}
+
+.Recipes.Details {
+	.Recipe {
+		.block1,
+		.block2 {
+			border-left: 1px solid #f3f3f3;
+		}
+		.left {
+			border: 1px solid #ccc;
+		}
+
+	}
+	h1 {
+		color: red;
+	}
+	.block2 {
+		.left {
+			color: pink;
+		}
+	}
+}
